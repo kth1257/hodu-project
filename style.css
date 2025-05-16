@@ -302,5 +302,20 @@ footer ul li {
   border-radius: 100%;
 }
 
-
+.floating-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #C4C4C4;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}
+.floating-btn:hover img {
+  filter: brightness(0.5);
+}
 
