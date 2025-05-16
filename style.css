@@ -125,7 +125,9 @@ header section img {
   height: 890px;
 }
 
-
+main {
+  margin-bottom: 45px;
+}
 main .main-head {
   display: flex;
   gap: 110px;
@@ -277,5 +279,28 @@ main .main-head {
   color: #fff;
   margin: 5px;
 }
+.footer-wrap {
+  margin: 0 auto;
+}
+footer {
+  width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-bottom: 45px;
+}
+footer ul {
+  display: flex;
+  gap: 20px;
+}
+footer ul li {
+  width: 42px;
+  height: 42px;
+  background-color: #F29D52;
+  padding: 9px;
+  border-radius: 100%;
+}
+
 
 
