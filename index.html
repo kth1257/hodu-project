@@ -14,7 +14,7 @@
             <header>
                 <nav>
                     <a href="#"><img class="head-logo" src="./image/logo.svg" alt="호두"></a>
-                    <ul class="header-menu">
+                    <ul class="header-menu mobile-hidden">
                         <li><a href="">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Support</a></li>
@@ -37,71 +37,75 @@
                 </section>
             </header>
         </div> <!-- header end -->
-        <main>
-            <section class="main-head">
-                <h2 class="hidden">메인 소개 섹션</h2>
-                <img src="./image/img_4.jpg" alt="">
-                <div class="main-head-text">
-                        <p>Lorem Ipsum is simply<br>dummy
-                            text of the printing<br>and dummy text
-                        </p>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry.
-                        </p>
-                    </div>
-            </section>
-            <section class="main-body">
-                <div class="main-body-text">
-                    <h2 class="hidden">갤러리 설명 섹션</h2>
-                    <p>
-                        dummy text of the printing and dummy
-                    </p>
-                    <p>
-                        Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br> 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                    </p>
-                </div>
-                <div class="image-box">
-                    <ul>
-                        <li><img src="image/img_1.jpg" alt=""></li>
-                        <li><img src="image/img_2.jpg" alt=""></li>
-                        <li><img src="image/img_3.jpg" alt=""></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="main-foot">
-                <h2 class="hidden">마무리 문구 섹션</h2>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown<br>
-                        Ipsum is simply dummy text of the printing and typesetting industry. 
-                    </p>
-                    <a href="">Learn More</a>
-            </section>
-            <div class="main-img-bg">
-                <section class="sub-box">
-                    <h2 class="hidden">블로그 구독 폼</h2>
-                        <div class="sub-text">
-                            <p>Subscribe to our Blog post</p>
+        <div class="middle-wrap">
+            <main>
+                <section class="main-head">
+                    <h2 class="hidden">메인 소개 섹션</h2>
+                    <img src="./image/img_4.jpg" alt="">
+                    <div class="main-head-text">
+                            <p>Lorem Ipsum is simply<br>dummy
+                                text of the printing<br>and dummy text
+                            </p>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> 
-                                Lorem Ipsum has been the industry's standard dummy text 
+                                Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry.
                             </p>
                         </div>
-                    <form class="email-form" action="">
-                        <div class="email-input">
-                            <img src="./image/mail.svg" alt="">
-                        <input type="text" placeholder="Enter your e-mail address" aria-label="이메일 입력">
-                        </div>
-                        <button>Subscribe</button>
-                    </form>
                 </section>
+                <section class="main-body">
+                    <div class="main-body-text">
+                        <h2 class="hidden">갤러리 설명 섹션</h2>
+                        <p>
+                            dummy text of the printing and dummy
+                        </p>
+                        <p>
+                            Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br> 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        </p>
+                    </div>
+                    <div class="image-box">
+                        <ul>
+                            <li><img src="image/img_1.jpg" alt=""></li>
+                            <li><img src="image/img_2.jpg" alt=""></li>
+                            <li><img src="image/img_3.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="main-foot">
+                    <h2 class="hidden">마무리 문구 섹션</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown<br>
+                            Ipsum is simply dummy text of the printing and typesetting industry. 
+                        </p>
+                        <a href="">Learn More</a>
+                        <article class="sub-box">
+                            <h2 class="hidden">블로그 구독 폼</h2>
+                            <div class="sub-text">
+                                <p>Subscribe to our Blog post</p>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> 
+                                    Lorem Ipsum has been the industry's standard dummy text 
+                                </p>
+                            </div>
+                        <form class="email-form" action="">
+                            <div class="email-input">
+                                <img src="./image/mail.svg" alt="">
+                            <input type="text" placeholder="Enter your e-mail address" aria-label="이메일 입력">
+                            </div>
+                            <button>Subscribe</button>
+                        </form>
+                    </article>
+                </section>
+            </main>
+            <div class="cat-bg">
+                <img src="./image/img_5.jpg" alt="">
+                    
             </div>
-        </main>
+        </div>
         <div class="footer-wrap">
             <footer>
-                <a class="footer-logo" href="#">
-                    <img src="image/logo.svg" alt="호두">
+                <a href="#">
+                    <img class="footer-logo" src="image/logo.svg" alt="호두">
                 </a>
                 <section class="sns-btns">
                     <ul>
@@ -134,11 +138,11 @@
     <a class="floating-btn" href="#">
         <img src="image/top-btn.svg" alt="">
     </a>
-    <div class="pc-modal">
+    <dialog class="pc-modal">
         <img src="./image/cat-subscribe.png" alt="">
         <p>Thank you!</p>
         <p>Lorem Ipsum is simply dummy text of the printing industry. </p>
         <button>OK! I Love HODU</button>
-    </div>
+    </dialog>
 </body>
 </html>
