@@ -17,6 +17,7 @@
   --header-bg-color : #F2E9D8;
   --main-font : 'SpoqaHanSansNeo-Regular';
   --main-font-bold : 'SpoqaHanSansNeo-bold';
+  font-size: 16px;
 }
 
 .hidden {
@@ -33,14 +34,12 @@
 a, button { 
   cursor: pointer;
   white-space: nowrap; 
+  background: none;
 }
 
 
 /* mobile */
-@media (max-width: 768px) {
-  p {
-    word-break: keep-all;
-  }
+@media (min-width: 768px) {
   .pc-modal {
     display: none;
     width: 600px;
@@ -60,12 +59,12 @@ a, button {
   }
   .pc-modal p:nth-child(2) {
     font-family: var(--main-font-bold);
-    font-size: 36px;
+    font-size: 2.25rem;
     color: var(--point-color);
     margin-bottom: 12px;
   }
   .pc-modal p:nth-child(3) {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 38px;
   }
   .pc-modal button {
@@ -97,15 +96,18 @@ a, button {
     flex-direction: column;
     align-items: center;
   }
-
+  header .mobile-hidden {
+    display: none;
+  }
   header nav {
     display: flex;
-    min-width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     height: 102px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
   }
   .head-logo {
     width: 130px;
@@ -133,23 +135,23 @@ a, button {
     max-width: 1280px;
     /* height: 900px; */
     gap: 128px;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   .head-text {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    transform: translate(0, -30%);
+    /* transform: translate(0, -30%); */
   }
   .head-text p:nth-child(1) {
-    font-size: 48px;
+    font-size: 3rem;
     font-family: var(--main-font-bold);
     font-weight: normal;
   }
   .head-text p:nth-child(2) {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .head-text a {
     display: inline-block;
@@ -190,11 +192,11 @@ a, button {
     object-fit: cover;
   }
   .main-head-text p:nth-child(1) {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--main-font-bold);
   }
   .main-head-text p:nth-child(2) {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .main-head-text {
     display: flex;
@@ -213,12 +215,12 @@ a, button {
   .main-body-text p:nth-child(2){
     font-family: var(--main-font-bold);
     color: var(--point-color);
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 40px;
     text-align: center;
   }
   .main-body-text p:nth-child(3){
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
   }
   .main-body-text p span{
@@ -251,7 +253,7 @@ a, button {
     position: relative;
   }
   .main-foot p {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .main-foot a {
     width: 147px;
@@ -289,12 +291,12 @@ a, button {
   .sub-text p:nth-child(1) {
     color: #fff;
     font-family: var(--main-font-bold);
-    font-size: 36px;
+    font-size: 2.25rem;
     margin-bottom: 18px;
   }
   .sub-text p:nth-child(2) {
     color: #fff;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .email-form {
     width: 100%;
@@ -424,12 +426,12 @@ a, button {
   }
   .pc-modal p:nth-child(2) {
     font-family: var(--main-font-bold);
-    font-size: 36px;
+    font-size: 2.25rem;
     color: var(--point-color);
     margin-bottom: 12px;
   }
   .pc-modal p:nth-child(3) {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 38px;
   }
   .pc-modal button {
@@ -464,7 +466,8 @@ a, button {
 
   header nav {
     display: flex;
-    min-width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     height: 102px;
     flex-direction: row;
     justify-content: space-between;
@@ -507,12 +510,12 @@ a, button {
     transform: translate(0, -30%);
   }
   .head-text p:nth-child(1) {
-    font-size: 48px;
+    font-size: 3rem;
     font-family: var(--main-font-bold);
     font-weight: normal;
   }
   .head-text p:nth-child(2) {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .head-text a {
     display: inline-block;
@@ -553,11 +556,11 @@ a, button {
     object-fit: cover;
   }
   .main-head-text p:nth-child(1) {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--main-font-bold);
   }
   .main-head-text p:nth-child(2) {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .main-head-text {
     display: flex;
@@ -576,12 +579,12 @@ a, button {
   .main-body-text p:nth-child(2){
     font-family: var(--main-font-bold);
     color: var(--point-color);
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 40px;
     text-align: center;
   }
   .main-body-text p:nth-child(3){
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
   }
   .main-body-text p span{
@@ -614,7 +617,7 @@ a, button {
     position: relative;
   }
   .main-foot p {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .main-foot a {
     width: 147px;
@@ -650,12 +653,12 @@ a, button {
   .sub-text p:nth-child(1) {
     color: #fff;
     font-family: var(--main-font-bold);
-    font-size: 36px;
+    font-size: 2.25rem;
     margin-bottom: 18px;
   }
   .sub-text p:nth-child(2) {
     color: #fff;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .email-form {
     width: 100%;
@@ -698,7 +701,7 @@ a, button {
     content: '';
     position: absolute;
     background-color: #F2E9D899;
-    inset: 0; top, bottom, left, right 한번에 지정
+    inset: 0;
     z-index: 1;
   }
   .cat-bg img {
