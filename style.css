@@ -35,11 +35,86 @@ a, button {
   cursor: pointer;
   white-space: nowrap; 
   background: none;
+  font-family: var(--main-font-bold);
 }
 
 
+
+
+.container {
+  /* width: 100%; */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* 모바일 */
+@media (max-width: 1000px) {
+  .container {
+    width: 100vw;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .header-wrap {
+    width: 100vw; /* viewport width 사용 */
+    max-width: 100%; /* 최대 너비 제한 */
+    overflow-x: hidden;
+  }
+  
+  header nav {
+    width: 100%;
+    padding: 0 15px; /* 좌우 패딩 추가 */
+  }
+  
+  main {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px; /* 좌우 패딩 추가 */
+    box-sizing: border-box;
+  }
+  
+  .main-head, .main-body, .main-foot {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+  
+  .sub-box {
+    width: calc(100% - 30px); /* 패딩 값을 고려한 너비 조정 */
+    max-width: 100%;
+    left: 15px; /* 좌우 중앙 정렬 */
+    right: 15px;
+    box-sizing: border-box;
+  }
+}
+
+/* 모바일 작은 화면 추가 대응 */
+@media (max-width: 400px) {
+  .header-wrap {
+    height: auto; /* 높이를 자동으로 조정 */
+    min-height: 700px; /* 최소 높이 설정 */
+  }
+  
+  header section {
+    height: auto;
+    padding: 50px 0;
+  }
+}
+
+
+
+
 /* mobile */
-@media (min-width: 768px) {
+@media (max-width: 1000px) {
+  p {
+    word-break: keep-all;
+  }
+  mobile-br {
+    display: inline;
+  }
   .pc-modal {
     display: none;
     width: 600px;
@@ -86,7 +161,7 @@ a, button {
   .header-wrap {
     background-color: var(--header-bg-color);
     width: 100%;
-    height: 900px;
+    height: 794px;
     overflow: hidden;
     margin-bottom: 80px;
   }
@@ -96,22 +171,22 @@ a, button {
     flex-direction: column;
     align-items: center;
   }
-  header .mobile-hidden {
+  header .pc-only {
     display: none;
   }
   header nav {
     display: flex;
     width: 100%;
-    max-width: 1280px;
-    height: 102px;
+    max-width: 1000px;
+    height: 76px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
   }
   .head-logo {
-    width: 130px;
-    height: 40px;
+    width: 92px;
+    height: 28px;
   }
   .header-menu {
     display: flex;
@@ -132,9 +207,9 @@ a, button {
 
   header section {
     display: flex;
-    max-width: 1280px;
-    /* height: 900px; */
-    gap: 128px;
+    width: 100%;
+    height: 794px;
+    gap: 30px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -142,16 +217,21 @@ a, button {
   .head-text {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
+    text-align: center;
     /* transform: translate(0, -30%); */
   }
+  .head-text p {
+    display: flex;
+    justify-content: center;
+  }
   .head-text p:nth-child(1) {
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-family: var(--main-font-bold);
     font-weight: normal;
   }
   .head-text p:nth-child(2) {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
   .head-text a {
     display: inline-block;
@@ -161,11 +241,14 @@ a, button {
     color: #fff;
     text-align: center;
     width: fit-content;
+    margin: auto;
   }
 
   header section img {
-    width: 415px;
-    height: 890px;
+    width: 100%;
+    height: 100%;
+    max-width: 197px;
+    max-height: 422px;
   }
 
   .middle-wrap {
@@ -174,25 +257,29 @@ a, button {
   }
 
   main {
-    max-width: 1280px;
+    max-width: 390px;
     margin: 0 auto;
     margin-bottom: 45px;
   }
   main .main-head {
+    width: 326px;
+    margin: 0 auto;
     display: flex;
-    gap: 110px;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
     margin-bottom: 120px;
   }
   .main-head img {
-    width: 660px;
-    height: 390px;
+    width: 326px;
+    height: 190px;
     border-radius: 30px;
     box-shadow: 10px 10px 30px 0px #00000040;
     object-fit: cover;
   }
   .main-head-text p:nth-child(1) {
-    font-size: 2.25rem;
+    width: 326px;
+    font-size: 1.5rem;
     font-family: var(--main-font-bold);
   }
   .main-head-text p:nth-child(2) {
@@ -210,12 +297,14 @@ a, button {
     flex-direction: column;
     align-items: center; 
     margin-bottom: 90px;
+    width: 326px;
+    margin: 0 auto;
   }
 
   .main-body-text p:nth-child(2){
     font-family: var(--main-font-bold);
     color: var(--point-color);
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin-bottom: 40px;
     text-align: center;
   }
@@ -231,24 +320,36 @@ a, button {
   .main-body-text {
     margin-bottom: 88px;
   }
+  .image-box {
+    width: 100%; /* 전체 뷰 영역 */
+    margin: 0 auto;
+    overflow: hidden; /* 이미지 잘리게 하기 */
+    position: relative;
+  }
   .image-box ul{
     display: flex;
-    flex-direction: row;
     gap: 72px;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    transform: translateX(0px); /* 첫 이미지 중앙 정렬용 */
+    transition: transform 0.5s ease-in-out;
   }
   .image-box img{
-    width: 378px;
-    height: 378px;
+    width: 260px;
+    height: 260px;
     border-radius: 30px;
     box-shadow: 10px 10px 30px 0px #00000040;
   }
 
   .main-foot {
+    width: 326px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 52px;
+    margin: 0 auto;
+    gap: 30px;
     margin-bottom: 196px;
     position: relative;
   }
@@ -261,17 +362,19 @@ a, button {
     padding: 15px 30px;
     border-radius: 40px;
     color: #fff;
+  }
+  .btn-wrap {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
   }
   .sub-box {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-between;
     align-items: center;
     position: absolute;
-    bottom: -300px;
+    bottom: -380px;
     left: 0;
     /* gap: 143px; */
     background-color: #263140;
@@ -282,35 +385,37 @@ a, button {
     height: auto;
     min-height: 200px;
     border-radius: 30px;
-    padding: 50px 58px;
+    padding: 36px 32px;
     z-index: 2;
+    width: 326px;
+    height: 348px;
   }
   .sub-text {
-    min-width: 400px;
   }
   .sub-text p:nth-child(1) {
     color: #fff;
     font-family: var(--main-font-bold);
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     margin-bottom: 18px;
   }
   .sub-text p:nth-child(2) {
     color: #fff;
     font-size: 0.875rem;
+    margin-bottom: 30px;
   }
   .email-form {
     width: 100%;
     max-width: 530px;
-    background-color: #fff;
-    border-radius: 30px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
   }
   .email-input {
     display: flex;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 30px;
     gap: 16px;
-    margin-left: 30px;
+    margin-bottom: 20px;
   }
   .email-input img {
     display: block;
@@ -319,11 +424,14 @@ a, button {
     align-self: center;
   }
   .email-form button {
+    width: 117px;
     background-color: var(--point-color);
-    padding: 15px 30px;
+    height: 40px;
     border-radius: 40px;
+    font-size: 14px;
     color: #fff;
     margin: 5px;
+    align-self: flex-end; 
   }
   .cat-bg {
     position: relative;
@@ -403,10 +511,16 @@ a, button {
 }
 
 /* PC */
-/*
-@media (min-width: 768px) {
+
+@media (min-width: 1000px) {
+  .mobile-only {
+    display: none;
+  }
   p {
     word-break: keep-all;
+  }
+  mobile-br {
+    display: none;
   }
   .pc-modal {
     display: none;
@@ -762,6 +876,6 @@ a, button {
   .floating-btn:hover img {
     filter: brightness(0.5);
   }
-} */
+}
 
 
