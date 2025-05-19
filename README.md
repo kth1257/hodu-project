@@ -1,5 +1,7 @@
 # hodu-project
 프로젝트 랜딩페이지
+
+https://kth1257.github.io/hodu-project/
 # HODU 웹페이지 프로젝트
 
 ![hodu-preview](./image/box-cat.png) <!-- 필요시 썸네일 이미지로 교체 -->
