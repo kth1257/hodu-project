@@ -11,31 +11,7 @@ HODU는 HTML과 CSS로 제작된 반응형 웹페이지입니다.
 간단한 소개, 이미지 갤러리, 블로그 구독 폼, 플로팅 버튼 등을 포함하고 있으며  
 PC/모바일 화면에서 모두 잘 작동하도록 구성되어 있습니다.
 
-## 📁 폴더 구조
 
-```
-
-📦 HODU/
-├── index.html
-├── reset.css
-├── style.css
-├── image/
-│   ├── logo.svg
-│   ├── menu.svg
-│   ├── box-cat.png
-│   ├── img\_1.jpg
-│   ├── img\_2.jpg
-│   ├── img\_3.jpg
-│   ├── img\_4.jpg
-│   ├── img\_5.jpg
-│   ├── mail.svg
-│   ├── blog.svg
-│   ├── instagram.svg
-│   ├── facebook.svg
-│   ├── youtube.svg
-│   └── top-btn.svg
-
-```
 
 ## ✨ 주요 기능
 
